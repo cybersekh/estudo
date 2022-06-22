@@ -29,24 +29,24 @@
 //     console.log("Insira um valor entre 0 a 100.")
 // }
 
-let nota = 65;
+// let nota = 65;
 
-switch (true) {
-  case nota >= 80:
-    console.log("Aprovado!");
-    break;
+// switch (true) {
+//   case nota >= 80:
+//     console.log("Aprovado!");
+//     break;
 
-  case nota >= 60 && nota <= 79:
-    console.log("Lista");
-    break;
+//   case nota >= 60 && nota <= 79:
+//     console.log("Lista");
+//     break;
 
-  case nota < 60 && nota > 0:
-    console.log("Reprovado!");
-    break;
+//   case nota < 60 && nota > 0:
+//     console.log("Reprovado!");
+//     break;
 
-  default:
-    console.log("Invalido!");
-}
+//   default:
+//     console.log("Invalido!");
+// }
 
 // let currentHour = 27
 // let message = ""
