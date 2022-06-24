@@ -1,0 +1,20 @@
+.header {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: blanchedalmond;
+    width: 100%;
+}
+
+.nav {
+
+}
+
+.navlinks li a{
+    text-decoration: none;
+    background-color: aqua;
+}
+
+h2 {
+    color: blue;
+}

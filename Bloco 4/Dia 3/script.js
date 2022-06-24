@@ -9,18 +9,18 @@
 // -----------------------------------
 
 
-let numbers = [25, 34, 78, 90];
-let valor = 34;
+// let numbers = [25, 34, 78, 90];
+// let valor = 34;
 
-for (let i = 0; i < numbers.length; i+=1) {
-    if (numbers[i] === valor) {
-        console.log(i)
-    } 
-}
+// for (let i = 0; i < numbers.length; i+=1) {
+//     if (numbers[i] === valor) {
+//         console.log(i)
+//     } 
+// }
 
-if (numbers !== i) {
-    console.log("Não encontrado!")
-}
+// if (numbers !== i) {
+//     console.log("Não encontrado!")
+// }
 
 // GABARITOOO
 
