@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        let body = document.querySelector('body');
+        body.style.backgroundColor = "#D2D1D0";
+
+        // Exercício 1!
+        let criah1 = document.createElement('h1');
+        body.appendChild(criah1)
+
+        // Exercício 2!
+        let criamain = document.createElement('main');
+        body.appendChild(criamain)
+        criamain.className = 'main-content';
+
+        // Exercício 3!
+        let criasection = document.createElement('section');
+        body.appendChild(criasection);
+        criasection.className = 'center-content';
+
+        // Exercício 4! 😢
+        let criap = document.createElement('p');
+        criasection.appendChild(criap);
+        criap.innerText = 'AAAAAAAA SERA Q FUNCIONA';
+
+        // Exercício 5!
+        
+    </script>
+  </body>
+</html>
