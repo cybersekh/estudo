@@ -63,6 +63,7 @@
         // Exercício 1!
         let criah1 = document.createElement('h1');
         body.appendChild(criah1)
+        criah1.innerText = 'Exercício 5.2 - JavaScript DOM';
 
         // Exercício 2!
         let criamain = document.createElement('main');
@@ -71,16 +72,86 @@
 
         // Exercício 3!
         let criasection = document.createElement('section');
-        body.appendChild(criasection);
+        criamain.appendChild(criasection);
         criasection.className = 'center-content';
 
-        // Exercício 4! 😢
+        // Exercício 4! 
         let criap = document.createElement('p');
         criasection.appendChild(criap);
-        criap.innerText = 'AAAAAAAA SERA Q FUNCIONA';
+        criap.innerText = 'Um texto maneiro e descolado.'
 
         // Exercício 5!
+        let criasection2 = document.createElement('section');
+        criamain.appendChild(criasection2);
+        criasection2.className = 'left-content';
+
+        // Exercício 6!
+        let criasection3 = document.createElement('section');
+        criamain.appendChild(criasection3);
+        criasection3.className = 'right-content';
+
+        // Exercício 7! -> Perguntei pra galera mesmo. 
+        let addimg = document.createElement('img');
+        criasection2.appendChild(addimg);
+        addimg.className = 'small-image';
+        addimg.src = 'https://picsum.photos/200';
+
+        // Exercício 8!
+        let lista = ['um', 'dois', 'três', 'quatro', 'quinto', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+        let criaUl = document.createElement('ul');
+        criasection3.appendChild(criaUl);
+        let nordenada = document.querySelector('ul');
+        for (let index = 0; index < lista.length; index++) {
+            let listinha = lista[index];
+            
+            let listahtml = document.createElement('li');
+            listahtml.innerText = listinha;
+
+            nordenada.appendChild(listahtml)
+        }
+
+        // Exercício 9!
+        for (let index = 1; index <= 3; index += 1) {
+            let elementH3 = document.createElement('h3');
+            elementH3.innerHTML = 'Título ' + index;
+            criamain.appendChild(elementH3);
+      }
+
+
+        // Exercício 1!
+        let title = document.querySelector('h1');
+        title.className = 'title';
+
+        // Exercício 2!
+        let addClassH3 = document.getElementsByTagName('h3');
+        for (let index = 0; index < 3; index++) {
+            addClassH3[index].className = 'description';
+        }
+
+        // Exercício 3! 🥲🥲🥲🥲🥲
+        // let sectionLeft = document.getElementsByClassName('left-content')[0];
+        // criamain.removeChild(sectionLeft);
+
+        // ou apenas ????????????
+        criamain.removeChild(criasection2);   
+
+        // Exercício 4! 
+        let addMargin = document.querySelector('.right-content');
+        addMargin.style.marginRight = 'auto';
+
+        // Exercício 5! 
+        // código preguiçoso que funciona:
+        // criamain.style.backgroundColor = 'green'
         
+        // forma que o exercício quer:
+        let mudaFundo = document.getElementsByClassName('center-content')[0];
+        mudaFundo.parentNode.style.backgroundColor = 'green'; //.parentNode pra achar o pai se eu não soubesse qual era o pai.
+
+        // Exercício 6! FINALMENTE.
+        let ul = document.getElementsByTagName('ul')[0];
+        ul.lastChild.remove();
+        ul.lastChild.remove();
     </script>
   </body>
 </html>
