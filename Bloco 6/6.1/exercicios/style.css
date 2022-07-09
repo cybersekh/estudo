@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+}
+
+#header {
+    background-color: #ff9f1c;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #cbf3f0;
+}
+
+main {
+    background-color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 800px;
+    border-left: 20px solid #2ec4b6;
+    border-right: 20px solid #2ec4b6;
+    border-bottom: 20px solid #2ec4b6;
+}
+
+.inline-block {
+    display: inline-block;
+    padding: 10px;
+}
+
+.viagem{
+    display: block;
+    margin-bottom: 20px;
+}
+
+#formulario {
+    padding: 50px;
+}
+
+#lugares {
+    margin-top: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.radius {
+    margin-right: 10px;
+}
+
+.checks {
+    margin-top: 20px;
+    display: block;
+}
+
+.botoes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    margin-left: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #2EC4B6;
+    border: 2px solid #cbf3f0;
+}
+
+.botao:hover {
+    background-color: #CBF3F0;
+    border: 2px solid #2ec4b6;
+}

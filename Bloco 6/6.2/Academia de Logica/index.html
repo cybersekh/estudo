@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hotel Trybe</title>
+  </head>
+
+  <body>
+    <header class="header-trybe">
+      <img
+        src="https://remotar.com.br/wp-content/uploads/2020/10/Trybe-200x200.jpg"
+        alt="Logo Trybe"
+      />
+      <h1>Hotel Trybe</h1>
+    </header>
+    <main>
+      <form action="" method="get">
+        <section class="hotel-form">
+          <h2>Reserve seu quarto!</h2>
+          <br />
+          <div>
+            <label for="checkin">Check-In:</label>
+            <input
+              type="date"
+              name="checkin"
+              id="checkin"
+              class="inputCheckin"
+            />
+
+            <label for="checkout">Check-Out:</label>
+            <input
+              type="date"
+              name="checkin"
+              id="checkin"
+              class="inputCheckout"
+            />
+          </div>
+        </section>
+
+        <section class="hotel-form">
+            <p>Quartos:</p>
+            <input 
+            type="radio" 
+            name="quarto" 
+            id="quarto1" 
+            class="bedroom" 
+            value="comum"/>
+            <label for="quarto1">Comum</label> <br>
+            <input 
+            type="radio" 
+            name="quarto" 
+            id="quarto2" 
+            class="bedroom"
+            value="club" /> 
+            <label for="quarto2">Club</label><br>
+            <input 
+            type="radio" 
+            name="quarto" 
+            id="quarto3" 
+            class="bedroom" 
+            value="luxo"/> 
+            <label for="quarto3">Luxo</label><br>
+        </section>
+
+        <section class="hotel-form" >
+            <label for="">Pessoas
+                <select name="" id="pessoas" class="nPessoas">
+                    <option value="" id="pessoas">1</option>
+                    <option value="" id="pessoas">2</option>
+                    <option value="" id="pessoas">3</option>
+                    <option value="" id="pessoas">4</option>
+                </select>
+            </label>
+        </section>
+
+        <section class="hotel-form">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Observações"></textarea><br>
+            <button type="submit" id="submit-btn">Enviar</button>
+        </section>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

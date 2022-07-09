@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrybeTrip</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <header id="header">
+        <h1>Trybe Trip</h1>
+    </header>
+    <main>
+
+        <form action="" method="get" class="bg-red-300" id="formulario">
+        <div class="inline-block">
+          <label for="">
+          Nome Completo:
+          <input type="text" name="nome" id="" minlength="10" maxlength="50" autocomplete="off">
+          </label>
+        </div>
+        <div class="inline-block">
+          <label for="">
+          E-mail:
+          <input type="email" name="email" id="" autocomplete="off" minlength="10" maxlength="50" required class="form-input">
+          </label>
+        </div>
+        <fieldset id="lugares">
+          <legend>Lugar Preferido:</legend>
+          <label for="montanha"><input type="radio" name="lugar" id="montanha" value="montanhas" class="radius">Montanha</label>
+          <label for="praia"><input type="radio" name="lugar" id="praia" value="praias" class="radius">Praia</label>
+          <label for="cidade"><input type="radio" name="lugar" id="cidade" value="cidade" class="radius">Cidade</label>
+          <label for="campo"><input type="radio" name="lugar" id="campo" value="campo" class="radius" checked>Campo</label>
+        </fieldset>
+        <div class="viagem">
+          <label for="">
+            Como seria sua viagem ideal?
+            <br>
+            <textarea name="" id="" cols="95" rows="8" maxlength="500" placeholder="Eu gostaria de..."></textarea>
+          </label>
+        </div>
+          <label for="">
+            Qual a melhor data para acontecer essa viagem?
+            <input type="date">
+          </label>
+
+          <label for="promoOn" class="checks">
+            <input type="checkbox" id="promoOn" checked> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+          </label>
+          <label for="direito-imagem" class="checks">
+            <input type="checkbox" id="direito-imagem"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+          </label>
+
+          <div class="botoes">
+            <button type="submit" id="enviar" class="p-2 bg-blue-500 rounded-md hover:bg-blue-600 cursor-pointer transition text-white font-bold">Enviar</button>
+            <button type="reset" id="limpar" class="botao">Limpar</button>
+          </div>
+        </form>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
